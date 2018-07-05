@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> List </title>
+</head>
+<body>
+	{% for page in pages %}
+		<a href="{%url 'page-detail' page.id%}">
+			<ul>
+				<li> {{page.title}} </li>
+			</ul>
+
+	{% endfor %}
+</body>
+</html>
+
+
+      
+          
